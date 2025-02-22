@@ -1,4 +1,4 @@
-const RenderInput = ({labelText, inputProps, type = "text",maxlength}) => {
+const RenderInputNumber = ({labelText, inputProps, type = "number"}) => {
 
     const {id, name, min, max, defaultValue, onchange, required, style}= inputProps;
 
@@ -13,7 +13,6 @@ const RenderInput = ({labelText, inputProps, type = "text",maxlength}) => {
                 name={name}
                 min={min}
                 max={max}
-                maxlength={maxlength}
                 className="block w-full border p-2 rounded mb-2"
                 defaultValue={defaultValue}
                 onchange={onchange}
@@ -23,4 +22,4 @@ const RenderInput = ({labelText, inputProps, type = "text",maxlength}) => {
         </div>
     )
 }
-export default RenderInput
+export default RenderInputNumber;
